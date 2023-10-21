@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<style>
+
+.calculator {
+    width: 500px;
+    height :500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 10px solid #7b0707;
+    background-color: rgba(10, 10, 10, 0.875);
+}
+#display {
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+
+    gap: 10px;
+}
+.inner {
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+    background-color: #333;
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button{
+    width: 100%;
+    height: 100%;
+    background-color: #9d9d9d;
+    /* border : 5px solid rgba(245, 253, 0, 0.893); */
+}
+.erase{
+    grid-column: 1/3;
+}
+.equals{
+    background-color: #d32c2c;
+}
+.ac {
+    grid-column: span 2;
+}
+</style>
+
+<body>
+    <div class="calculator">
+        <div class="display"> <input type="text"  id="display" readonly></div>
+        <div class="grid"> 
+        <div class="inner erase"> <button> c </button></div>
+        <div class="inner ac"><button>AC</button></div>
+        
+        <div class="empty"></div>
+        
+        <div class = "inner box1"> <button>7</button></div>
+        <div class = "inner box2"> <button>8</button></div>
+        <div class = "inner box3"> <button>9</button></div>
+        <div class = "inner box4"> <button>%</button></div>
+        <div class = "inner box5"> <button>-</button></div>
+        <div class = "inner box6"> <button>4</button></div>
+        <div class = "inner box7"> <button>5</button></div>
+        <div class = "inner box8"> <button>6</button></div>
+        <div class = "inner box9"> <button>x</button></div>
+        <div class = "inner box10"> <button>/</button></div>
+        <div class = "inner box11"> <button>1</button></div>
+        <div class = "inner box12"> <button>2</button></div>
+        <div class = "inner box13"> <button>3</button></div>
+        <div class = "inner box13"> <button>+</button></div>
+        <div class = "inner box13"> <button class="equals">=</button></div>
+        <div class="empty"></div>
+        <div class="inner zero"><button>0</button></div>
+        <div class="inner dot"><button>.</button></div>
+        </div>
+    </div>
+</body>
+<script src="indexx.js"></script>
+</html>
